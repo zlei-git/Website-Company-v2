@@ -1,20 +1,22 @@
-# NordicHome Furniture — Premium Scandinavian E-Commerce
+# Nordic Pure Nutrition and Natural Hydration - E-Commerce Platform
 
-A full-stack Laravel 12 application for **NordicHome Furniture**, a fictional international Scandinavian furniture company.
+A full-stack Laravel 12 application for **Nordic Pure Nutrition & Natural Hydration**, a modern Scandinavian e-commerce platform offering natural mineral waters, living probiotic yogurts, organic plant milks, and active nutrition.
 
 ## Tech Stack
 - **Framework**: Laravel 12 (PHP 8.2+)
-- **Database**: MySQL
-- **Templating**: Blade
-- **Styling**: Tailwind CSS 4 (via `@tailwindcss/vite`)
-- **Interactivity**: Alpine.js
-- **Asset Bundling**: Vite
+- **Database**: MySQL / SQLite
+- **Templating**: Blade Engine
+- **Styling**: Tailwind CSS v4 (via `@tailwindcss/vite`)
+- **Interactivity**: Alpine.js v3
+- **Animations**: Bidirectional Scroll Reveal Observer & Micro-Interactions
+- **Asset Bundling**: Vite Modern Pipeline
+- **Testing**: PHPUnit 11 Automation Test Suite
 
 ---
 
-## Credentials
+## Default Credentials
 
-### Admin Account
+### Admin Atelier Account
 - **URL**: `/login` (redirects to `/admin`)
 - **Email**: `admin@nordichome.test`
 - **Password**: `password`
@@ -30,7 +32,8 @@ A full-stack Laravel 12 application for **NordicHome Furniture**, a fictional in
 
 1. **Clone or navigate to the project directory**:
    ```bash
-   cd d:\nordichome
+   git clone https://github.com/zlei-git/Website-Company-v2.git
+   cd Website-Company-v2
    ```
 
 2. **Install Composer Dependencies**:
@@ -80,20 +83,39 @@ A full-stack Laravel 12 application for **NordicHome Furniture**, a fictional in
 
 ## Features
 
-### Customer Website
-- **Editorial Home Page**: Scandinavian aesthetics, hero banner, category showcase, brand story, newsletter signup.
-- **Product Catalog**: Multi-attribute filtering (Category, Collection, Price range, In-stock status), dynamic sorting, and instant search.
-- **Product Detail**: Multi-angle gallery with interactive selector, specifications, reviews, stock indicators, and related products.
-- **Wishlist & Database-Backed Cart**: Add/remove, increment/decrement with stock validation, coupon code discounting.
-- **Transactional Checkout**: Atomic database transaction creating order, reserving stock, recording coupon usage, and generating order numbers.
-- **Customer Account**: Personal dashboard, past orders history, order tracking, address book management, profile details.
-- **Inspiration Blog**: Articles on interior styling, Nordic lifestyle, craftsmanship stories.
+### Customer Storefront
+- **Glacial Spring Hero**: Aesthetic photography with high-contrast typography and instant shopping CTA.
+- **Interactive Breakfast Ritual Lookbook**: Editorial Nordic breakfast setting with Alpine.js pulsing hotspot pins and quick-view product modal.
+- **Four Core Nutrition Pillars**:
+  1. *Waters & Natural Hydration* (AQUA Reflections, Evian Natural Mineral Water)
+  2. *Essential Dairy & Probiotics* (Activia, Actimel, Oikos Probiotic Yogurt)
+  3. *Plant-Based Milks & Drinks* (Alpro Oat, Almond, Coconut & Silk Soy)
+  4. *Active & Specialized Nutrition* (High-protein isolates & recovery drinks)
+- **Dynamic Catalog with Multi-Filtering**: Instant filter by category, price range, Nutri-Score indicator (Grade A, B, C), and sorting (Popularity, Highest Rating, Price, Newest).
+- **Product Detail View**: Packshot gallery, volume dimensions, nutrition facts panel, verified reviews, and realtime stock status.
+- **Wishlist & Database-Backed Cart**: Live item quantity adjustments, instant coupon code application with auto-discount deduction, and cold-chain delivery options.
+- **Transactional Checkout**: Atomic DB transactions, address book selector, promo discount validation, stock deduction, and order generation.
+- **Nutrition & Wellness Journal**: Editorial articles on cellular hydration, gut microbiome health, barista plant-milk recipes, and muscle recovery.
+- **Customer Concierge**: Dedicated inquiry form for nutrition consultations and partnership questions.
 
-### Admin Dashboard
-- **Executive Metrics**: Total revenue, order volume, customer counts, real sales charts, low stock monitors.
-- **Complete Inventory & Catalog CRUD**: Manage products, multiple photo uploads, categories, and curated collections.
-- **Order Management**: Order timeline and status updates (Pending, Processing, Shipped, Completed, Cancelled).
-- **Customer & Review Moderation**: Inspect customer orders, approve or delete reviews.
-- **Marketing & Communication**: Coupon manager (Percentage & Fixed discount), contact message inbox, newsletter subscribers.
-- **Business Reports**: Date-filtered sales and category performance.
-- **Site Settings**: Contact details, social profiles, and branding.
+### Admin Atelier Backoffice
+- **Executive Metrics & KPIs**: Gross revenue, active order counts, inventory valuation, registered customer statistics, and sales rhythm charts.
+- **Complete Inventory CRUD**: Manage products, upload high-res packshots, configure volume dimensions, pricing, and Nutri-Score tags.
+- **Critical Low Stock Watchlist**: Automated visual warnings when product stock falls below safe threshold (< 5 units).
+- **Order Fulfillment Lifecycle**: Status progression (Pending -> Processing -> Shipped -> Completed / Cancelled) with tracking numbers.
+- **Customer Reviews Moderation**: Moderate, approve, feature, or remove product reviews.
+- **Promotion & Voucher Engine**: Percentage and fixed discount coupons with minimum spend thresholds and usage limits.
+- **Concierge Messages Inbox**: Review, process, and resolve customer support inquiries.
+
+### Mobile Responsiveness (HP & Tablet)
+- **Mobile-First Breakpoint System**: Optimized for smartphone viewports (< 640px), tablets (768px), and desktop (>= 1024px).
+- **Off-Canvas Hamburger Drawer**: Smooth slide-out mobile navigation with backdrop blur and touch ergonomics (minimum 44x44px tap targets).
+- **Fluid Typography & Zero Layout Shift**: Scalable rem typography and fixed aspect-ratio packshot containers (CLS = 0).
+- **Adaptive Grid**: Seamless transition from 1 column on mobile to 2 columns on tablet and 4 columns on desktop monitors.
+
+---
+
+## Project Documentation
+A comprehensive technical report with system specifications, architecture analysis, and verification results is available in the project repository:
+- `Laporan_Lengkap_Website_Nordic_Nutrition.docx` (Microsoft Word)
+- `Laporan_Lengkap_Website_Nordic_Nutrition.pdf` (Printable PDF)
