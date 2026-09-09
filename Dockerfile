@@ -28,7 +28,7 @@ COPY . .
 RUN cp -n .env.example .env
 
 # Install PHP dependencies without platform mismatch errors
-RUN composer install --ignore-platform-reqs --no-dev --optimize-autoloader --no-interaction
+RUN composer install --ignore-platform-reqs --optimize-autoloader --no-interaction
 
 # Generate application key
 RUN php artisan key:generate --force
@@ -36,13 +36,11 @@ RUN php artisan key:generate --force
 # Install frontend dependencies and build Vite production assets
 RUN npm install && npm run build
 
-# Prepare SQLite database, set permissions, and run migrations + seeders
+# Prepare database, storage, and cache directory permissions
 RUN mkdir -p database && \
     touch database/database.sqlite && \
-    chmod -R 777 database storage bootstrap/cache && \
-    php artisan migrate --force && \
-    php artisan db:seed --force
+    chmod -R 777 database storage bootstrap/cache
 
 EXPOSE 8000
 
-CMD sh -c "chmod -R 777 database storage bootstrap/cache 2>/dev/null || true && php artisan storage:link || true && php artisan serve --host=0.0.0.0 --port=${PORT:-8000}"
+CMD sh -c "mkdir -p database && touch database/database.sqlite && chmod -R 777 database storage bootstrap/cache && php artisan migrate --force && (php artisan db:seed --force || true) && php artisan storage:link || true && php artisan serve --host=0.0.0.0 --port=${PORT:-8000}"
