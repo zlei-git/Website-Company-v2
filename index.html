@@ -1,0 +1,659 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="Vji4Fs0tHT6uZFAWOGCY7FfJU6cRrR4ai7VJpEe1">
+
+    <title>Nordic - Pure Hydration &amp; Healthy Living Nutrition</title>
+    <meta name="description" content="Single-origin volcanic spring waters, live probiotic yogurts, and organic plant-based milks for conscious living.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="style" href="./build/assets/app-Cp0WR-CU.css" /><link rel="modulepreload" as="script" href="./build/assets/app-DF0yQ4Z_.js" /><link rel="stylesheet" href="./build/assets/app-Cp0WR-CU.css" /><script type="module" src="./build/assets/app-DF0yQ4Z_.js"></script>    </head>
+<body class="bg-[#FAF8F3] text-[#333333] font-sans antialiased min-h-screen flex flex-col selection:bg-[#D8C3A5] selection:text-[#1C1C1C]">
+
+    <!-- Global Alert / Flash Messages -->
+    <div class="fixed top-4 right-4 z-50 max-w-md w-full pointer-events-none">
+        <div class="pointer-events-auto space-y-2">
+            
+                    </div>
+    </div>
+
+    <!-- Navigation -->
+    <header x-data="{ mobileOpen: false, searchOpen: false, spacesDropdown: false }" 
+        class="bg-[#FAF8F3]/95 backdrop-blur-md border-b border-[#E8E4DC] sticky top-0 z-40 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex items-center justify-between h-20">
+            
+            <div class="flex-shrink-0">
+                <a href="./" class="flex flex-col group">
+                    <span class="font-serif text-2xl sm:text-3xl tracking-tight text-[#18181A] font-medium">Nordic</span>
+                    <span class="text-[9px] uppercase tracking-[0.3em] text-[#A1A1AA] -mt-1 group-hover:text-[#18181A] transition-colors">Pure Nutrition & Hydration</span>
+                </a>
+            </div>
+
+            
+            <nav class="hidden lg:flex items-center space-x-10 text-[13px] tracking-[0.05em] uppercase font-medium">
+                
+                <div class="relative" @mouseenter="spacesDropdown = true" @mouseleave="spacesDropdown = false">
+                    <button class="flex items-center space-x-1 hover:text-[#18181A] py-2 text-[#71717A]">
+                        <span>Categories</span>
+                        <svg class="w-3 h-3 transition-transform" :class="{ 'rotate-180': spacesDropdown }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="spacesDropdown" x-cloak 
+                         x-transition:enter="transition ease-out duration-150"
+                         x-transition:enter-start="opacity-0 translate-y-2"
+                         x-transition:enter-end="opacity-100 translate-y-0"
+                         class="absolute left-0 top-full w-64 bg-white border border-[#E8E4DC] shadow-lg py-3 rounded-none text-xs">
+                        <a href="#categories" class="block px-5 py-2 hover:bg-[#FAF8F3] text-[#27272A] hover:text-[#18181A]">Natural Mineral Waters</a>
+                        <a href="#categories" class="block px-5 py-2 hover:bg-[#FAF8F3] text-[#27272A] hover:text-[#18181A]">Probiotic Dairy & Yogurt</a>
+                        <a href="#categories" class="block px-5 py-2 hover:bg-[#FAF8F3] text-[#27272A] hover:text-[#18181A]">Plant-Based Milks</a>
+                        <a href="#categories" class="block px-5 py-2 hover:bg-[#FAF8F3] text-[#27272A] hover:text-[#18181A]">High Protein & Recovery</a>
+                        <a href="#categories" class="block px-5 py-2 hover:bg-[#FAF8F3] text-[#27272A] hover:text-[#18181A]">Healthy Snacks & Granola</a>
+                        <a href="#categories" class="block px-5 py-2 hover:bg-[#FAF8F3] text-[#27272A] hover:text-[#18181A]">Specialized Nutrition</a>
+                        <div class="border-t border-[#E8E4DC] my-1"></div>
+                        <a href="#categories" class="block px-5 py-2 font-semibold text-[#18181A] hover:underline">All Categories &rarr;</a>
+                    </div>
+                </div>
+
+                <a href="#products" class="hover:text-[#18181A] py-2 text-[#71717A]">
+                    All Products
+                </a>
+                <a href="#categories" class="hover:text-[#18181A] py-2 text-[#71717A]">
+                    Collections
+                </a>
+                <a href="#journal" class="hover:text-[#18181A] py-2 text-[#71717A]">
+                    Journal
+                </a>
+                <a href="#about" class="hover:text-[#18181A] py-2 text-[#71717A]">
+                    About Us
+                </a>
+                <a href="#contact" class="hover:text-[#18181A] py-2 text-[#71717A]">
+                    Contact
+                </a>
+            </nav>
+
+            
+            <div class="flex items-center space-x-6">
+                
+                <button @click="searchOpen = !searchOpen" class="text-[#27272A] hover:text-[#18181A] p-1 transition-colors" title="Search Products">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                </button>
+
+                
+                <a href="#products" class="text-[#27272A] hover:text-[#18181A] p-1 relative transition-colors" title="Saved Wishlist">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                                    </a>
+
+                
+                <a href="#products" class="text-[#27272A] hover:text-[#18181A] p-1 relative flex items-center space-x-1.5 transition-colors" title="Shopping Bag">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                                    </a>
+
+                
+                <div class="relative" x-data="{ userMenu: false }">
+                                            <a href="#products" class="text-xs uppercase tracking-[0.15em] font-medium text-[#18181A] hover:text-[#7A8B6F] transition-colors">
+                            Sign In
+                        </a>
+                                    </div>
+
+                
+                <button @click="mobileOpen = !mobileOpen" class="lg:hidden text-[#18181A] p-1.5 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div x-show="searchOpen" x-cloak 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-2"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         class="border-t border-[#E8E4DC] bg-white py-4 px-4 sm:px-6 lg:px-8">
+        <form action="#products" method="GET" class="max-w-3xl mx-auto flex items-center gap-3">
+            <input type="text" name="search" placeholder="Search natural mineral waters, probiotic yogurts, organic plant milks, protein snacks..." 
+                   class="w-full text-sm border-0 border-b border-[#18181A] rounded-none px-2 py-2 focus:ring-0 focus:border-[#18181A]">
+            <button type="submit" class="btn-primary py-2 px-5 text-xs flex-shrink-0">Search</button>
+            <button type="button" @click="searchOpen = false" class="text-xs uppercase tracking-widest text-[#71717A] hover:text-[#18181A] ml-2">Close</button>
+        </form>
+    </div>
+
+    
+    <div x-show="mobileOpen" x-cloak class="lg:hidden border-t border-[#E8E4DC] bg-white px-6 py-6 space-y-4">
+        <nav class="flex flex-col space-y-3 text-sm font-medium tracking-wide">
+            <a href="./" class="hover:text-[#7A8B6F]">Home</a>
+            <a href="#products" class="hover:text-[#7A8B6F]">All Products</a>
+            <a href="#categories" class="hover:text-[#7A8B6F]">Categories</a>
+            <a href="#categories" class="hover:text-[#7A8B6F]">Collections</a>
+            <a href="#journal" class="hover:text-[#7A8B6F]">Journal</a>
+            <a href="#about" class="hover:text-[#7A8B6F]">About Us</a>
+            <a href="#contact" class="hover:text-[#7A8B6F]">Contact</a>
+        </nav>
+    </div>
+</header>
+    <!-- Main Content -->
+    <main class="flex-grow">
+        
+<section class="relative min-h-[85vh] flex items-end overflow-hidden no-reveal">
+    
+    <img src="./images/hero-banner.jpg" 
+         alt="Pristine Scandinavian Glacial Mountain Spring Water" 
+         class="absolute inset-0 w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out">
+
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-white/75 via-white/30 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-white/65 via-transparent to-transparent"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-36 w-full">
+        <div class="max-w-3xl space-y-6">
+            
+            <div class="flex items-center space-x-3 text-[11px] uppercase tracking-[0.3em] text-[#7A8B6F] font-semibold">
+                <span>Nordic Hydration & Nutrition</span>
+                <span>â€¢</span>
+                <span>Vol. IX - 2026 Collection</span>
+            </div>
+
+            
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.05] tracking-tight text-[#18181A]">
+                Pure hydration.<br>
+                <span class="italic font-light text-[#27272A]">Living nutrition.</span>
+            </h1>
+
+            <p class="text-sm sm:text-base text-[#3F3F46] font-normal max-w-xl leading-relaxed">
+                Single-origin volcanic spring waters, live probiotic cultured yogurts, and certified organic plant-based milks crafted for everyday vitality.
+            </p>
+
+            <div class="pt-4 flex flex-wrap gap-4 items-center">
+                <a href="#products" class="btn-primary bg-[#18181A] text-[#FAF8F3] hover:bg-[#2E2E32] border-[#18181A]">
+                    Explore Products &rarr;
+                </a>
+                <a href="#ritual" class="btn-secondary text-[#18181A] border-[#18181A]/50 hover:bg-[#18181A] hover:text-white">
+                    The Morning Ritual
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="mt-16 pt-6 border-t border-[#18181A]/20 grid grid-cols-2 sm:grid-cols-4 gap-6 text-xs text-[#52525B]">
+            <div>
+                <span class="block text-[10px] uppercase tracking-widest text-[#71717A] font-semibold">Spring Origin</span>
+                <span class="text-[#18181A] font-mono font-medium">Volcanic Aquifers</span>
+            </div>
+            <div>
+                <span class="block text-[10px] uppercase tracking-widest text-[#71717A] font-semibold">Active Cultures</span>
+                <span class="text-[#18181A] font-medium">Live Bifidus & Kefir</span>
+            </div>
+            <div>
+                <span class="block text-[10px] uppercase tracking-widest text-[#71717A] font-semibold">Eco Packaging</span>
+                <span class="text-[#18181A] font-medium">100% Recycled & Glass</span>
+            </div>
+            <div>
+                <span class="block text-[10px] uppercase tracking-widest text-[#71717A] font-semibold">Cold-Chain Logistics</span>
+                <span class="text-[#18181A] font-medium">Guaranteed Freshness</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-24 bg-[#FAF8F3] border-b border-[#E8E4DC]" id="ritual" x-data="{ activePin: null }">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="text-[10px] uppercase tracking-[0.25em] text-[#7A8B6F] font-semibold block mb-2">Daily Wellness Ritual</span>
+                <h2 class="font-serif text-3xl sm:text-4xl text-[#18181A]">The Nordic Breakfast Table</h2>
+            </div>
+            <p class="text-xs sm:text-sm text-[#71717A] max-w-md mt-4 md:mt-0 font-light leading-relaxed">
+                Click the interactive points to inspect the clean hydration, living probiotic yogurts, and oat milks selected for everyday health.
+            </p>
+        </div>
+
+        
+        <div class="relative rounded-sm overflow-hidden bg-[#EFECE6] aspect-[16/10] sm:aspect-[16/9] shadow-sm">
+            <img src="./images/breakfast-ritual.jpg" 
+                 alt="The Nordic Breakfast Table" 
+                 class="w-full h-full object-cover">
+
+            
+            <div class="absolute top-[38%] left-[19%] z-20">
+                <button type="button" 
+                        @click="activePin = (activePin === 1 ? null : 1)" 
+                        class="hotspot-pin" 
+                        title="AQUA Reflections Natural Still">
+                </button>
+                <div x-show="activePin === 1" @click.away="activePin = null" x-cloak
+                     class="absolute bottom-9 left-1/2 -translate-x-1/2 w-52 bg-white/95 backdrop-blur-sm p-3 border border-[#E8E4DC] shadow-lg rounded-sm text-xs z-30">
+                    <span class="text-[9px] uppercase tracking-wider text-[#7A8B6F] block">Natural Hydration</span>
+                    <h4 class="font-serif text-sm text-[#18181A] font-semibold">AQUA Reflections Still</h4>
+                    <p class="text-[#71717A] text-[11px] mt-0.5">750 ml Glass Bottle</p>
+                    <div class="mt-2 pt-2 border-t border-[#E8E4DC] flex justify-between items-center">
+                        <span class="font-mono text-[#18181A] font-semibold">$3.50</span>
+                        <a href="#products" class="text-[10px] uppercase font-bold text-[#18181A] hover:underline">View Product &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="absolute top-[62%] left-[42%] z-20">
+                <button type="button" 
+                        @click="activePin = (activePin === 2 ? null : 2)" 
+                        class="hotspot-pin" 
+                        title="Activia Probiotic Wild Strawberry">
+                </button>
+                <div x-show="activePin === 2" @click.away="activePin = null" x-cloak
+                     class="absolute bottom-9 left-1/2 -translate-x-1/2 w-52 bg-white/95 backdrop-blur-sm p-3 border border-[#E8E4DC] shadow-lg rounded-sm text-xs z-30">
+                    <span class="text-[9px] uppercase tracking-wider text-[#7A8B6F] block">Live Probiotics</span>
+                    <h4 class="font-serif text-sm text-[#18181A] font-semibold">Activia Wild Strawberry</h4>
+                    <p class="text-[#71717A] text-[11px] mt-0.5">4 x 125 g Pots</p>
+                    <div class="mt-2 pt-2 border-t border-[#E8E4DC] flex justify-between items-center">
+                        <span class="font-mono text-[#18181A] font-semibold">$4.50</span>
+                        <a href="#products" class="text-[10px] uppercase font-bold text-[#18181A] hover:underline">View Product &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="absolute top-[32%] left-[88%] z-20">
+                <button type="button" 
+                        @click="activePin = (activePin === 3 ? null : 3)" 
+                        class="hotspot-pin" 
+                        title="Alpro Barista Organic Oat Milk">
+                </button>
+                <div x-show="activePin === 3" @click.away="activePin = null" x-cloak
+                     class="absolute bottom-9 right-0 w-52 bg-white/95 backdrop-blur-sm p-3 border border-[#E8E4DC] shadow-lg rounded-sm text-xs z-30">
+                    <span class="text-[9px] uppercase tracking-wider text-[#7A8B6F] block">Plant-Based</span>
+                    <h4 class="font-serif text-sm text-[#18181A] font-semibold">Alpro Barista Oat Milk</h4>
+                    <p class="text-[#71717A] text-[11px] mt-0.5">1000 ml Tetra Brik</p>
+                    <div class="mt-2 pt-2 border-t border-[#E8E4DC] flex justify-between items-center">
+                        <span class="font-mono text-[#18181A] font-semibold">$3.60</span>
+                        <a href="#products" class="text-[10px] uppercase font-bold text-[#18181A] hover:underline">View Product &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-7 space-y-6">
+            <div class="border-b border-[#E8E4DC] pb-4 flex items-baseline justify-between">
+                <span class="text-[10px] uppercase tracking-[0.25em] text-[#71717A]">Featured Daily Essential</span>
+                <span class="text-xs text-[#71717A]">Curated Purity</span>
+            </div>
+
+                                            <div class="group bg-white border border-[#E8E4DC] rounded-sm overflow-hidden flex flex-col justify-between">
+                    <div class="relative aspect-[4/3] bg-[#EFECE6] overflow-hidden">
+                        <img src="./images/products/aqua-reflections.jpg" 
+                             alt="AQUA Reflections Natural Still" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 text-[10px] uppercase tracking-widest font-semibold text-[#18181A]">
+                            Signature Hydration
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+                        <div class="space-y-2">
+                            <span class="text-[10px] uppercase tracking-widest text-[#7A8B6F] font-semibold">Waters &amp; Natural Hydration</span>
+                            <h3 class="font-serif text-2xl sm:text-3xl text-[#18181A]">AQUA Reflections Natural Still</h3>
+                            <p class="text-xs text-[#71717A] max-w-md leading-relaxed line-clamp-2">
+                                Bottled directly at the single protected source high in volcanic mountains. Crisp, naturally filtered through geological strata with balanced mineral composition.
+                            </p>
+                        </div>
+                        <div class="text-left sm:text-right flex-shrink-0 space-y-2">
+                            <span class="font-serif text-2xl text-[#18181A] font-medium block">$3.50</span>
+                            <a href="#products" class="btn-primary text-[11px] py-2.5 px-4">
+                                Inspect Product &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+
+        
+        <div class="lg:col-span-5 space-y-6">
+            <div class="border-b border-[#E8E4DC] pb-4">
+                <span class="text-[10px] uppercase tracking-[0.25em] text-[#71717A]">Vital Companions</span>
+            </div>
+
+            <div class="space-y-4">
+                                    <a href="#products" 
+                       class="group bg-white border border-[#E8E4DC] hover:border-[#18181A] p-4 rounded-sm flex items-center gap-5 transition-all">
+                        <div class="w-24 h-24 bg-[#EFECE6] flex-shrink-0 overflow-hidden rounded-sm">
+                            <img src="./images/products/evian-spring.jpg" 
+                                 alt="Evian French Alps Natural Spring Water" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="flex-grow space-y-1">
+                            <span class="text-[9px] uppercase tracking-wider text-[#A1A1AA]">Waters &amp; Natural Hydration</span>
+                            <h4 class="font-serif text-base text-[#18181A] group-hover:text-[#7A8B6F] transition-colors leading-snug">Evian French Alps Natural Spring Water</h4>
+                            <span class="font-mono text-xs font-semibold text-[#18181A]">$4.20</span>
+                        </div>
+                        <span class="text-xs text-[#A1A1AA] group-hover:text-[#18181A] group-hover:translate-x-1 transition-all">&rarr;</span>
+                    </a>
+                                    <a href="#products" 
+                       class="group bg-white border border-[#E8E4DC] hover:border-[#18181A] p-4 rounded-sm flex items-center gap-5 transition-all">
+                        <div class="w-24 h-24 bg-[#EFECE6] flex-shrink-0 overflow-hidden rounded-sm">
+                            <img src="./images/products/aqua-sparkling.jpg" 
+                                 alt="AQUA Sparkling Mineral Infusion" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="flex-grow space-y-1">
+                            <span class="text-[9px] uppercase tracking-wider text-[#A1A1AA]">Waters &amp; Natural Hydration</span>
+                            <h4 class="font-serif text-base text-[#18181A] group-hover:text-[#7A8B6F] transition-colors leading-snug">AQUA Sparkling Mineral Infusion</h4>
+                            <span class="font-mono text-xs font-semibold text-[#18181A]">$3.75</span>
+                        </div>
+                        <span class="text-xs text-[#A1A1AA] group-hover:text-[#18181A] group-hover:translate-x-1 transition-all">&rarr;</span>
+                    </a>
+                                    <a href="#products" 
+                       class="group bg-white border border-[#E8E4DC] hover:border-[#18181A] p-4 rounded-sm flex items-center gap-5 transition-all">
+                        <div class="w-24 h-24 bg-[#EFECE6] flex-shrink-0 overflow-hidden rounded-sm">
+                            <img src="./images/products/activia-strawberry.jpg" 
+                                 alt="Activia Probiotic Wild Strawberry" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="flex-grow space-y-1">
+                            <span class="text-[9px] uppercase tracking-wider text-[#A1A1AA]">Probiotic Dairy &amp; Yogurt</span>
+                            <h4 class="font-serif text-base text-[#18181A] group-hover:text-[#7A8B6F] transition-colors leading-snug">Activia Probiotic Wild Strawberry</h4>
+                            <span class="font-mono text-xs font-semibold text-[#18181A]">$4.50</span>
+                        </div>
+                        <span class="text-xs text-[#A1A1AA] group-hover:text-[#18181A] group-hover:translate-x-1 transition-all">&rarr;</span>
+                    </a>
+                            </div>
+
+            
+            <div class="bg-[#F4EFEB] p-6 rounded-sm border border-[#E8E4DC] space-y-3">
+                <p class="font-serif italic text-sm text-[#27272A] leading-relaxed">
+                    "Health is not sustained through deprivation, but through the daily purity of what we choose to absorb."
+                </p>
+                <span class="text-[10px] uppercase tracking-widest text-[#71717A] block">- Dr. Astrid Lindqvist, Head of Nutrition</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-20 bg-[#F4EFEB] border-y border-[#E8E4DC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+            <span class="text-[10px] uppercase tracking-[0.25em] text-[#7A8B6F] font-semibold">Living Integrity</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-[#18181A]">Our Nutritional Pillars</h2>
+            <p class="text-xs sm:text-sm text-[#71717A] font-light leading-relaxed">
+                Every bottle and pot adheres to the highest standards of natural provenance, cellular hydration, and live cultures.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a href="#categories" class="group bg-white p-6 rounded-sm border border-[#E8E4DC] hover:border-[#18181A] transition-all text-center space-y-3">
+                <div class="w-16 h-16 rounded-full mx-auto bg-[#D8C3A5]/40 border border-[#D8C3A5] flex items-center justify-center text-xl">
+                    ðŸ’§
+                </div>
+                <h3 class="font-serif text-lg text-[#18181A] group-hover:text-[#7A8B6F] transition-colors">Volcanic Spring Water</h3>
+                <p class="text-[11px] text-[#71717A] leading-relaxed">Filtered through ancient volcanic strata for optimal mineral balance.</p>
+                <span class="text-[10px] uppercase tracking-widest font-semibold text-[#18181A] inline-block pt-1">Explore Waters &rarr;</span>
+            </a>
+
+            <a href="#categories" class="group bg-white p-6 rounded-sm border border-[#E8E4DC] hover:border-[#18181A] transition-all text-center space-y-3">
+                <div class="w-16 h-16 rounded-full mx-auto bg-[#EFECE6] border border-[#E8E4DC] flex items-center justify-center text-xl">
+                    ðŸ¥£
+                </div>
+                <h3 class="font-serif text-lg text-[#18181A] group-hover:text-[#7A8B6F] transition-colors">Live Active Probiotics</h3>
+                <p class="text-[11px] text-[#71717A] leading-relaxed">Billions of beneficial Bifidus and kefir cultures for gut health.</p>
+                <span class="text-[10px] uppercase tracking-widest font-semibold text-[#18181A] inline-block pt-1">Explore Yogurts &rarr;</span>
+            </a>
+
+            <a href="#categories" class="group bg-white p-6 rounded-sm border border-[#E8E4DC] hover:border-[#18181A] transition-all text-center space-y-3">
+                <div class="w-16 h-16 rounded-full mx-auto bg-[#C59B6D]/30 border border-[#C59B6D] flex items-center justify-center text-xl">
+                    ðŸŒ±
+                </div>
+                <h3 class="font-serif text-lg text-[#18181A] group-hover:text-[#7A8B6F] transition-colors">100% Plant-Based</h3>
+                <p class="text-[11px] text-[#71717A] leading-relaxed">Sustainably farmed European oats and almonds with zero dairy lactose.</p>
+                <span class="text-[10px] uppercase tracking-widest font-semibold text-[#18181A] inline-block pt-1">Explore Plant Milks &rarr;</span>
+            </a>
+
+            <a href="#categories" class="group bg-white p-6 rounded-sm border border-[#E8E4DC] hover:border-[#18181A] transition-all text-center space-y-3">
+                <div class="w-16 h-16 rounded-full mx-auto bg-[#D4D4D8]/40 border border-[#D4D4D8] flex items-center justify-center text-xl">
+                    âš¡
+                </div>
+                <h3 class="font-serif text-lg text-[#18181A] group-hover:text-[#7A8B6F] transition-colors">Active Protein & Recovery</h3>
+                <p class="text-[11px] text-[#71717A] leading-relaxed">Targeted nutrition to accelerate muscular recovery and energy.</p>
+                <span class="text-[10px] uppercase tracking-widest font-semibold text-[#18181A] inline-block pt-1">Explore Active &rarr;</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative bg-[#18181A] text-[#FAF8F3] rounded-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-center">
+        <div class="lg:col-span-6 p-8 sm:p-16 space-y-6">
+            <span class="text-[10px] uppercase tracking-[0.25em] text-[#D8C3A5] font-semibold">Featured Collection</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal leading-tight">Pure Mountain Springs &amp; Hydration</h2>
+            <p class="text-xs sm:text-sm text-[#A1A1AA] font-light leading-relaxed">
+                Single-origin still and sparkling volcanic mineral waters bottled in premium recyclable glass for conscious daily living.
+            </p>
+            <div class="pt-2">
+                <a href="#categories" class="btn-primary bg-[#FAF8F3] text-[#18181A] hover:bg-[#D8C3A5] border-[#FAF8F3]">
+                    Explore the Pure Mountain Springs &amp; Hydration
+                </a>
+            </div>
+        </div>
+        <div class="lg:col-span-6 aspect-[4/3] bg-[#27272A] overflow-hidden">
+                        <img src="./images/cat-waters.jpg" 
+                 alt="Pure Mountain Springs &amp; Hydration" 
+                 class="w-full h-full object-cover">
+        </div>
+    </div>
+</section>
+
+
+<section class="py-20 bg-white border-t border-[#E8E4DC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between mb-12 border-b border-[#E8E4DC] pb-4">
+            <div>
+                <span class="text-[10px] uppercase tracking-[0.25em] text-[#7A8B6F] font-semibold block mb-1">Publications</span>
+                <h2 class="font-serif text-2xl sm:text-3xl text-[#18181A]">The Nutrition Journal</h2>
+            </div>
+            <a href="#journal" class="text-xs uppercase tracking-widest text-[#18181A] hover:underline font-medium">
+                All Articles &rarr;
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                            <article class="space-y-3 group">
+                    <a href="#journal" class="block aspect-[16/10] bg-[#EFECE6] overflow-hidden rounded-sm">
+                        <img src="./images/cat-protein.jpg" 
+                             alt="Fueling Cellular Recovery: Clean Protein, Plant Sterols, and Vitality" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </a>
+                    <span class="text-[9px] uppercase tracking-wider text-[#7A8B6F] font-semibold">Active Vitality</span>
+                    <h3 class="font-serif text-lg text-[#18181A] group-hover:text-[#7A8B6F] transition-colors leading-snug">
+                        <a href="#journal">Fueling Cellular Recovery: Clean Protein, Plant Sterols, and Vitality</a>
+                    </h3>
+                    <p class="text-xs text-[#71717A] line-clamp-2 leading-relaxed">
+                        An insightful dietary protocol to enhance muscular repair, maintain healthy cholesterol levels, and fuel an active modern life.
+                    </p>
+                </article>
+                                            <article class="space-y-3 group">
+                    <a href="#journal" class="block aspect-[16/10] bg-[#EFECE6] overflow-hidden rounded-sm">
+                        <img src="./images/cat-plant-milk.jpg" 
+                             alt="Crafting the Perfect Plant-Based Morning Coffee with Micro-Foam Oat Milk" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </a>
+                    <span class="text-[9px] uppercase tracking-wider text-[#7A8B6F] font-semibold">Barista Rituals</span>
+                    <h3 class="font-serif text-lg text-[#18181A] group-hover:text-[#7A8B6F] transition-colors leading-snug">
+                        <a href="#journal">Crafting the Perfect Plant-Based Morning Coffee with Micro-Foam Oat Milk</a>
+                    </h3>
+                    <p class="text-xs text-[#71717A] line-clamp-2 leading-relaxed">
+                        How whole European organic oats produce the ideal micro-bubble texture for specialty espresso without masking subtle floral flavor notes.
+                    </p>
+                </article>
+                                            <article class="space-y-3 group">
+                    <a href="#journal" class="block aspect-[16/10] bg-[#EFECE6] overflow-hidden rounded-sm">
+                        <img src="./images/cat-waters.jpg" 
+                             alt="The Science of Deep Cellular Hydration and Natural Minerals" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </a>
+                    <span class="text-[9px] uppercase tracking-wider text-[#7A8B6F] font-semibold">Hydration Science</span>
+                    <h3 class="font-serif text-lg text-[#18181A] group-hover:text-[#7A8B6F] transition-colors leading-snug">
+                        <a href="#journal">The Science of Deep Cellular Hydration and Natural Minerals</a>
+                    </h3>
+                    <p class="text-xs text-[#71717A] line-clamp-2 leading-relaxed">
+                        Why drinking natural volcanic spring water with bio-available electrolytes supports cognitive clarity and sustained energy throughout your day.
+                    </p>
+                </article>
+                    </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1C1C1C] text-[#FAF8F3] pt-16 pb-12 border-t border-[#2A2A2A]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-16 border-b border-[#2D2D2D]">
+            
+            <div class="lg:col-span-2 space-y-5">
+                <div class="flex flex-col">
+                    <span class="font-heading text-2xl font-medium tracking-tight text-[#FAF8F3]">Nordic</span>
+                    <span class="text-[9px] tracking-[0.3em] uppercase text-[#D8C3A5]">Pure Nutrition & Hydration</span>
+                </div>
+
+                <p class="font-heading italic text-lg sm:text-xl text-[#FAF8F3]/90 max-w-md font-normal leading-relaxed">
+                    â€œPure Living. Conscious Nutrition.â€
+                </p>
+
+                <p class="text-xs sm:text-sm text-[#A0A0A0] leading-relaxed max-w-sm">
+                    Rooted in pristine volcanic aquifers, living probiotic fermentations, and sustainably harvested plant milks. We bring clean, nutrient-dense vitality to your daily routine.
+                </p>
+
+                
+                <div class="pt-2 text-xs text-[#888888] space-y-1">
+                    <p>Nutrition Studio: Kronprinsens Gade 14, Copenhagen</p>
+                    <p>Concierge: <a href="mailto:concierge@nordichome.test" class="text-[#D8C3A5] hover:underline">concierge@nordichome.test</a></p>
+                </div>
+            </div>
+
+            
+            <div>
+                <h4 class="text-xs font-semibold uppercase tracking-widest text-[#D8C3A5] mb-5">
+                    Shop Categories
+                </h4>
+                <ul class="space-y-3 text-xs sm:text-sm text-[#B0B0B0]">
+                    <li>
+                        <a href="#categories" class="hover:text-white transition-colors">
+                            Natural Mineral Waters
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categories" class="hover:text-white transition-colors">
+                            Probiotic Yogurt & Dairy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categories" class="hover:text-white transition-colors">
+                            Plant-Based Milks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categories" class="hover:text-white transition-colors">
+                            High Protein & Active
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categories" class="hover:text-white transition-colors">
+                            Healthy Snacks & Granola
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categories" class="hover:text-white transition-colors">
+                            Specialized Nutrition
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div>
+                <h4 class="text-xs font-semibold uppercase tracking-widest text-[#D8C3A5] mb-5">
+                    Our Standards
+                </h4>
+                <ul class="space-y-3 text-xs sm:text-sm text-[#B0B0B0]">
+                    <li>
+                        <a href="#about" class="hover:text-white transition-colors">
+                            Purity & Sourcing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="hover:text-white transition-colors">
+                            Microbiome Science
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#journal" class="hover:text-white transition-colors">
+                            Nutrition Journal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#categories" class="hover:text-white transition-colors">
+                            Curated Collections
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="hover:text-white transition-colors">
+                            Eco-Packaging Pledge
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="space-y-4">
+                <h4 class="text-xs font-semibold uppercase tracking-widest text-[#D8C3A5] mb-5">
+                    Customer Care
+                </h4>
+                <ul class="space-y-3 text-xs sm:text-sm text-[#B0B0B0]">
+                    <li>
+                        <a href="#contact" class="hover:text-white transition-colors">
+                            Contact & Concierge
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white transition-colors">
+                            Order Status & Tracking
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="hover:text-white transition-colors">
+                            Cold-Chain Delivery Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="hover:text-white transition-colors">
+                            FAQs & Storage Advice
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#888888] gap-4">
+            <p>&copy; 2026 Nordic Nutrition & Hydration. All rights reserved.</p>
+            <div class="flex items-center space-x-6">
+                <a href="#about" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#about" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#contact" class="hover:text-white transition-colors">Customer Support</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>
