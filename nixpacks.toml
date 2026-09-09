@@ -1,14 +1,17 @@
-# Railway Nixpacks Configuration for Laravel 12
+# Railway Nixpacks Configuration for Laravel 12 on PHP 8.4
+[variables]
+NIXPACKS_PHP_VERSION = '8.4'
+
 [phases.setup]
 nixPkgs = [
-    'php83',
-    'php83Extensions.pdo_mysql',
-    'php83Extensions.sqlite3',
-    'php83Extensions.pdo_sqlite',
-    'php83Extensions.zip',
-    'php83Extensions.gd',
-    'php83Extensions.mbstring',
-    'php83Packages.composer',
+    'php84',
+    'php84Extensions.pdo_mysql',
+    'php84Extensions.sqlite3',
+    'php84Extensions.pdo_sqlite',
+    'php84Extensions.zip',
+    'php84Extensions.gd',
+    'php84Extensions.mbstring',
+    'php84Packages.composer',
     'nodejs_22'
 ]
 
