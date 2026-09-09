@@ -13,17 +13,18 @@ class AddressSeeder extends Seeder
         $users = User::all();
 
         foreach ($users as $user) {
-            Address::factory()->create([
+            Address::create([
                 'user_id' => $user->id,
+                'label' => 'Rumah',
+                'full_name' => $user->name,
+                'phone' => '08123456789',
+                'address' => 'Jl. Jenderal Sudirman No. 45',
+                'city' => 'Jakarta Selatan',
+                'state' => 'DKI Jakarta',
+                'postal_code' => '12190',
+                'country' => 'Indonesia',
                 'is_default' => true,
             ]);
-
-            if (rand(0, 1)) {
-                Address::factory()->create([
-                    'user_id' => $user->id,
-                    'is_default' => false,
-                ]);
-            }
         }
     }
 }

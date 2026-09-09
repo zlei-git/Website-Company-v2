@@ -28,7 +28,7 @@ COPY . .
 RUN cp -n .env.example .env
 
 # Install PHP dependencies without platform mismatch errors
-RUN composer install --ignore-platform-reqs --optimize-autoloader --no-interaction
+RUN composer install --ignore-platform-reqs --no-dev --optimize-autoloader --no-interaction
 
 # Generate application key
 RUN php artisan key:generate --force

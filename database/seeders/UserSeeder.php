@@ -24,6 +24,11 @@ class UserSeeder extends Seeder
             'role' => 'customer',
         ]);
 
-        User::factory(4)->create();
+        User::create([
+            'name' => 'Budi Santoso',
+            'email' => 'customer2@nordichome.test',
+            'password' => Hash::make('password'),
+            'role' => 'customer',
+        ]);
     }
 }
