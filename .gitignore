@@ -27,3 +27,7 @@ Homestead.yaml
 Thumbs.db
 ~$*
 /scratch
+*.docx
+*.pdf
+generate_report.php
+Laporan*
