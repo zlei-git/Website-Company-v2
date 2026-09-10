@@ -31,7 +31,7 @@ class UserSeeder extends Seeder
 
         // Fallback / legacy demo accounts
         User::firstOrCreate(
-            ['email' => 'admin@nordichome.test'],
+            ['email' => 'admin@Danonehome.test'],
             [
                 'name' => 'Admin Danone',
                 'password' => Hash::make('password'),
@@ -40,7 +40,7 @@ class UserSeeder extends Seeder
         );
 
         User::firstOrCreate(
-            ['email' => 'customer@nordichome.test'],
+            ['email' => 'customer@Danonehome.test'],
             [
                 'name' => 'Pelanggan Danone',
                 'password' => Hash::make('password'),
