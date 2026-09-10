@@ -54,7 +54,7 @@ class ProductSeeder extends Seeder
                 'featured' => true,
             ],
             [
-                'name' => 'Danone Glacier Pure Electrolyte Water',
+                'name' => 'Nordic Glacier Pure Electrolyte Water',
                 'category' => 'Waters & Natural Hydration',
                 'price' => 3.90,
                 'dimensions' => '750 ml Aluminum Canteen',
@@ -106,12 +106,12 @@ class ProductSeeder extends Seeder
                 'featured' => true,
             ],
             [
-                'name' => 'Danone Bio-Kefir Traditional Cultured Milk',
+                'name' => 'Nordic Bio-Kefir Traditional Cultured Milk',
                 'category' => 'Probiotic Dairy & Yogurt',
                 'price' => 3.80,
                 'dimensions' => '500 ml Glass Carafe',
                 'material' => 'Organic Pasture Milk, 12 Authentic Live Kefir Grains',
-                'description' => 'Slow-fermented for 24 hours according to heritage Danone methods. Pleasantly tangy, light, and teeming with beneficial live microorganisms.',
+                'description' => 'Slow-fermented for 24 hours according to heritage Nordic methods. Pleasantly tangy, light, and teeming with beneficial live microorganisms.',
                 'colors' => ['#7A8B6F', '#FAF8F3', '#18181A'],
                 'featured' => false,
             ],
@@ -158,12 +158,12 @@ class ProductSeeder extends Seeder
                 'featured' => false,
             ],
             [
-                'name' => 'Danone Cold-Pressed Golden Oat Latte',
+                'name' => 'Nordic Cold-Pressed Golden Oat Latte',
                 'category' => 'Plant-Based Milks & Drinks',
                 'price' => 4.25,
                 'dimensions' => '330 ml Glass Bottle',
                 'material' => 'Gluten-Free Oats, Single Origin Arabica, Ceylon Cinnamon',
-                'description' => 'Ready-to-drink artisanal cold brew blended with fresh oat milk and warm Danone warming spices. Clean energy with smooth sustained release.',
+                'description' => 'Ready-to-drink artisanal cold brew blended with fresh oat milk and warm Nordic warming spices. Clean energy with smooth sustained release.',
                 'colors' => ['#A1887F', '#FAF8F3', '#18181A'],
                 'featured' => false,
             ],
@@ -200,7 +200,7 @@ class ProductSeeder extends Seeder
                 'featured' => true,
             ],
             [
-                'name' => 'Danone Clean Whey Recovery Strawberry Cream',
+                'name' => 'Nordic Clean Whey Recovery Strawberry Cream',
                 'category' => 'Active & High Protein',
                 'price' => 4.50,
                 'dimensions' => '350 ml Glass Flask',
@@ -210,7 +210,7 @@ class ProductSeeder extends Seeder
                 'featured' => false,
             ],
             [
-                'name' => 'Danone Performance Electrolyte Fizz Tablets',
+                'name' => 'Nordic Performance Electrolyte Fizz Tablets',
                 'category' => 'Active & High Protein',
                 'price' => 8.90,
                 'dimensions' => '20 Effervescent Tablets Tube',
@@ -222,7 +222,7 @@ class ProductSeeder extends Seeder
 
             // Healthy Snacks & Bowls
             [
-                'name' => 'Artisanal Danone Honey Granola Crunch',
+                'name' => 'Artisanal Nordic Honey Granola Crunch',
                 'category' => 'Healthy Snacks & Bowls',
                 'price' => 6.80,
                 'dimensions' => '350 g Resealable Kraft Bag',
@@ -262,12 +262,12 @@ class ProductSeeder extends Seeder
                 'featured' => false,
             ],
             [
-                'name' => 'Danone Wild Lingonberry & Apple Compote',
+                'name' => 'Nordic Wild Lingonberry & Apple Compote',
                 'category' => 'Healthy Snacks & Bowls',
                 'price' => 5.20,
                 'dimensions' => '280 g Glass Jar',
                 'material' => 'Foraged Wild Lingonberries, Crisp Orchard Apples, Lemon',
-                'description' => 'Hand-harvested in Danone boreal forests and gently simmered without refined sugar. Bright, tart, and rich in natural bioflavonoids.',
+                'description' => 'Hand-harvested in Nordic boreal forests and gently simmered without refined sugar. Bright, tart, and rich in natural bioflavonoids.',
                 'colors' => ['#D32F2F', '#FAF8F3', '#18181A'],
                 'featured' => false,
             ],
@@ -304,7 +304,7 @@ class ProductSeeder extends Seeder
                 'featured' => false,
             ],
             [
-                'name' => 'Organic Puree Pouch Danone Pear & Raspberry',
+                'name' => 'Organic Puree Pouch Nordic Pear & Raspberry',
                 'category' => 'Specialized & Early Life',
                 'price' => 2.40,
                 'dimensions' => '100 g BPA-Free Pouch',

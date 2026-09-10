@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Promotional Codes & Vouchers - Danone Operations')
+@section('title', 'Promotional Codes & Vouchers - Nordic Operations')
 
 @section('content')
 <div class="space-y-8 max-w-7xl mx-auto">

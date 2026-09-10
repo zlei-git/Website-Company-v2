@@ -1,6 +1,6 @@
 @extends('layouts.customer')
 
-@section('title', 'Commission Confirmed - Danone Store Indonesia')
+@section('title', 'Commission Confirmed - NordicHome Atelier')
 
 @section('content')
 <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
@@ -12,7 +12,7 @@
     <span class="text-[10px] uppercase tracking-[0.3em] text-[#7A8B6F] font-semibold block mb-2">Tusind Tak &bull; Commission Registered</span>
     <h1 class="font-serif text-3xl sm:text-5xl text-[#18181A] font-normal tracking-tight">Your Pieces are Commissioned</h1>
     <p class="text-xs sm:text-sm text-[#71717A] font-light leading-relaxed max-w-lg mx-auto mt-3 mb-10">
-        We have formally registered consignment <strong class="text-[#18181A] font-mono">#{{ $order->order_number }}</strong>. Our Copenhagen workshop is preparing your editions with standar mutu resmi Danone.
+        We have formally registered consignment <strong class="text-[#18181A] font-mono">#{{ $order->order_number }}</strong>. Our Copenhagen workshop is preparing your editions with traditional Nordic joinery.
     </p>
 
     {{-- Atelier Receipt Monograph --}}

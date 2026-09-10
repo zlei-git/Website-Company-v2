@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Collector Dossier: ' . $customer->name . ' - Danone Atelier')
+@section('title', 'Collector Dossier: ' . $customer->name . ' - Nordic Atelier')
 
 @section('content')
 <div class="space-y-8 max-w-5xl mx-auto">

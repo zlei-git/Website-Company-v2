@@ -1,6 +1,6 @@
 @extends('layouts.customer')
 
-@section('title', 'Access Denied - Danone Store Indonesia')
+@section('title', 'Access Denied - Nordic Pure Nutrition')
 
 @section('content')
 <div class="min-h-[60vh] flex items-center justify-center py-20 px-6">

@@ -10,28 +10,8 @@ class UserSeeder extends Seeder
 {
     public function run(): void
     {
-        // Danone Official Accounts
         User::firstOrCreate(
             ['email' => 'admin@danone.co.id'],
-            [
-                'name' => 'Admin Danone Indonesia',
-                'password' => Hash::make('password'),
-                'role' => 'admin',
-            ]
-        );
-
-        User::firstOrCreate(
-            ['email' => 'customer@danone.co.id'],
-            [
-                'name' => 'Budi Santoso',
-                'password' => Hash::make('password'),
-                'role' => 'customer',
-            ]
-        );
-
-        // Fallback / legacy demo accounts
-        User::firstOrCreate(
-            ['email' => 'admin@Danonehome.test'],
             [
                 'name' => 'Admin Danone',
                 'password' => Hash::make('password'),
@@ -40,9 +20,27 @@ class UserSeeder extends Seeder
         );
 
         User::firstOrCreate(
-            ['email' => 'customer@Danonehome.test'],
+            ['email' => 'customer@danone.co.id'],
             [
-                'name' => 'Pelanggan Danone',
+                'name' => 'Customer Danone',
+                'password' => Hash::make('password'),
+                'role' => 'customer',
+            ]
+        );
+
+        User::firstOrCreate(
+            ['email' => 'admin@nordichome.test'],
+            [
+                'name' => 'Admin',
+                'password' => Hash::make('password'),
+                'role' => 'admin',
+            ]
+        );
+
+        User::firstOrCreate(
+            ['email' => 'customer@nordichome.test'],
+            [
+                'name' => 'Customer',
                 'password' => Hash::make('password'),
                 'role' => 'customer',
             ]

@@ -1,16 +1,16 @@
 @extends('layouts.customer')
 
-@section('title', $inspiration->title . ' - Danone Nutrition Journal')
+@section('title', $inspiration->title . ' - NordicHome Journal')
 
 @section('content')
 <article class="py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {{-- Header --}}
         <div class="text-center space-y-4 mb-10">
-            <span class="text-xs uppercase tracking-[0.2em] text-[#7A8B6F] font-semibold">{{ $inspiration->category ?? 'Danone Living' }}</span>
+            <span class="text-xs uppercase tracking-[0.2em] text-[#7A8B6F] font-semibold">{{ $inspiration->category ?? 'Nordic Living' }}</span>
             <h1 class="font-serif text-3xl sm:text-5xl text-[#1C1C1C] leading-tight">{{ $inspiration->title }}</h1>
             <div class="flex items-center justify-center space-x-4 text-xs text-[#777777] pt-2">
-                <span>By {{ $inspiration->author ?? 'Danone Store Indonesia' }}</span>
+                <span>By {{ $inspiration->author ?? 'NordicHome Studio' }}</span>
                 <span>•</span>
                 <span>{{ $inspiration->published_at?->format('F d, Y') ?? 'Recently Published' }}</span>
             </div>

@@ -1,13 +1,13 @@
 @extends('layouts.customer')
 
-@section('title', 'Pure Nutrition & Natural Hydration Catalog - Danone')
+@section('title', 'Pure Nutrition & Natural Hydration Catalog - Nordic')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     {{-- Editorial Monograph Header --}}
     <div class="border-b border-[#E8E4DC] pb-8 mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div>
-            <span class="text-[10px] uppercase tracking-[0.25em] text-[#7A8B6F] font-semibold block mb-1.5">Katalog Nutrisi Danone</span>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-[#7A8B6F] font-semibold block mb-1.5">Nordic Nutrition Directory</span>
             <h1 class="font-serif text-3xl sm:text-5xl text-[#18181A]">Nutrition & Hydration</h1>
             <p class="text-xs sm:text-sm text-[#71717A] mt-2 font-light max-w-xl leading-relaxed">
                 Single-origin volcanic spring waters, living probiotic yogurts, organic plant milks, and active performance nutrition for conscious living.

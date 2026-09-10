@@ -1,10 +1,10 @@
-# Danone Store Indonesia
+# NordicHome Furniture
 ## Design System & UI Guidelines
 
 ## 1. Brand Identity
 
 Brand Name:
-Danone Store Indonesia
+NordicHome Furniture
 
 Industry:
 Furniture & Home Living
@@ -24,7 +24,7 @@ Main Tagline:
 Furniture Designed for Better Living
 
 Brand Concept:
-Danone Store Indonesia adalah brand furniture bergaya Scandinavian yang mengutamakan desain minimalis, kenyamanan, kualitas material, dan fungsi.
+NordicHome Furniture adalah brand furniture bergaya Scandinavian yang mengutamakan desain minimalis, kenyamanan, kualitas material, dan fungsi.
 
 ---
 

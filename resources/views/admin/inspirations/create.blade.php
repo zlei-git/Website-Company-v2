@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'New Article - Danone Admin')
+@section('title', 'New Article - Nordic Admin')
 
 @section('content')
 <div class="max-w-3xl space-y-6">
@@ -10,7 +10,7 @@
         @csrf
         <div>
             <label class="block text-xs font-semibold uppercase tracking-wider text-[#333333] mb-1">Title *</label>
-            <input type="text" name="title" required placeholder="e.g. The Architecture of Danone Daylight">
+            <input type="text" name="title" required placeholder="e.g. The Architecture of Nordic Daylight">
         </div>
         <div class="grid grid-cols-2 gap-4">
             <div>
@@ -19,7 +19,7 @@
             </div>
             <div>
                 <label class="block text-xs font-semibold uppercase tracking-wider text-[#333333] mb-1">Author</label>
-                <input type="text" name="author" value="Danone Indonesia">
+                <input type="text" name="author" value="Nordic Studio">
             </div>
         </div>
         <div>

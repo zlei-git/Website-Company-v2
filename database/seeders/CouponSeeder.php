@@ -11,7 +11,7 @@ class CouponSeeder extends Seeder
     public function run(): void
     {
         Coupon::create([
-            'code' => 'Danone10',
+            'code' => 'NORDIC10',
             'discount_type' => 'percentage',
             'discount_value' => 10,
             'min_purchase' => 100,

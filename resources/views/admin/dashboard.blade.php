@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin Dashboard - Danone Store Indonesia')
+@section('title', 'Admin Dashboard - Nordic Pure Nutrition')
 
 @section('content')
 <div class="space-y-8">

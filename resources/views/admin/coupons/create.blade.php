@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'New Coupon - Danone Admin')
+@section('title', 'New Coupon - Nordic Admin')
 
 @section('content')
 <div class="max-w-2xl space-y-6">
@@ -11,7 +11,7 @@
         <div class="grid grid-cols-2 gap-4">
             <div>
                 <label class="block text-xs font-semibold uppercase tracking-wider text-[#333333] mb-1">Coupon Code *</label>
-                <input type="text" name="code" required placeholder="e.g. DANONE10" class="uppercase">
+                <input type="text" name="code" required placeholder="e.g. NORDIC10" class="uppercase">
             </div>
             <div>
                 <label class="block text-xs font-semibold uppercase tracking-wider text-[#333333] mb-1">Discount Type *</label>

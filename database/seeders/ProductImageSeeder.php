@@ -21,41 +21,41 @@ class ProductImageSeeder extends Seeder
             'evian-french-alps-natural-spring-water' => 'products/evian-spring.jpg',
             'volvic-touch-of-fruit-lemon-lime' => 'products/volvic-lemon-lime.jpg',
             'aqua-sparkling-mineral-infusion' => 'products/aqua-sparkling.jpg',
-            'Danone-glacier-pure-electrolyte-water' => 'products/Danone-glacier.jpg',
+            'nordic-glacier-pure-electrolyte-water' => 'products/nordic-glacier.jpg',
 
             // Probiotic Dairy & Yogurt
             'activia-probiotic-wild-strawberry' => 'products/activia-strawberry.jpg',
             'activia-zero-greek-style-natural-yogurt' => 'products/activia-greek.jpg',
             'danone-oikos-triple-zero-vanilla-greek-yogurt' => 'products/oikos-vanilla.jpg',
             'actimel-daily-immunity-shot-mixed-berries' => 'products/actimel-berries.jpg',
-            'Danone-bio-kefir-traditional-cultured-milk' => 'products/Danone-kefir.jpg',
+            'nordic-bio-kefir-traditional-cultured-milk' => 'products/nordic-kefir.jpg',
 
             // Plant-Based Milks & Drinks
             'alpro-barista-organic-oat-milk' => 'products/alpro-oat-milk.jpg',
             'alpro-roasted-almond-unsweetened-milk' => 'products/alpro-almond-milk.jpg',
             'silk-organic-creamy-soymilk' => 'products/silk-soymilk.jpg',
             'alpro-coconut-almond-refresh-drink' => 'products/alpro-coconut-almond.jpg',
-            'Danone-cold-pressed-golden-oat-latte' => 'products/alpro-oat-milk.jpg',
+            'nordic-cold-pressed-golden-oat-latte' => 'products/alpro-oat-milk.jpg',
 
             // Active & High Protein (reuse similar for non-generated)
             'danone-hipro-25g-protein-shake-chocolate' => 'products/actimel-berries.jpg',
             'danone-hipro-20g-protein-pudding-caramel' => 'products/oikos-vanilla.jpg',
             'danacol-plant-sterol-cardiovascular-shot' => 'products/actimel-berries.jpg',
-            'Danone-clean-whey-recovery-strawberry-cream' => 'products/activia-strawberry.jpg',
-            'Danone-performance-electrolyte-fizz-tablets' => 'products/Danone-glacier.jpg',
+            'nordic-clean-whey-recovery-strawberry-cream' => 'products/activia-strawberry.jpg',
+            'nordic-performance-electrolyte-fizz-tablets' => 'products/nordic-glacier.jpg',
 
             // Healthy Snacks & Bowls (reuse similar)
-            'artisanal-Danone-honey-granola-crunch' => 'products/alpro-oat-milk.jpg',
+            'artisanal-nordic-honey-granola-crunch' => 'products/alpro-oat-milk.jpg',
             'organic-acai-berry-chia-breakfast-bowl' => 'products/activia-strawberry.jpg',
             'alpro-plant-based-vanilla-soya-dessert' => 'products/oikos-vanilla.jpg',
             'scandinavian-rye-seed-crispbread' => 'products/alpro-almond-milk.jpg',
-            'Danone-wild-lingonberry-apple-compote' => 'products/activia-strawberry.jpg',
+            'nordic-wild-lingonberry-apple-compote' => 'products/activia-strawberry.jpg',
 
             // Specialized & Early Life (reuse similar)
             'bebelac-nutri-step-toddler-formula-3' => 'products/oikos-vanilla.jpg',
             'aptamil-profutura-organic-follow-on-formula' => 'products/silk-soymilk.jpg',
             'fortimel-plant-based-complete-clinical-shake' => 'products/alpro-oat-milk.jpg',
-            'organic-puree-pouch-Danone-pear-raspberry' => 'products/activia-strawberry.jpg',
+            'organic-puree-pouch-nordic-pear-raspberry' => 'products/activia-strawberry.jpg',
             'nutricia-neocate-lcp-hypoallergenic-formula' => 'products/silk-soymilk.jpg',
         ];
 
@@ -66,14 +66,14 @@ class ProductImageSeeder extends Seeder
                 'products/evian-spring.jpg',
                 'products/volvic-lemon-lime.jpg',
                 'products/aqua-sparkling.jpg',
-                'products/Danone-glacier.jpg',
+                'products/nordic-glacier.jpg',
             ],
             'dairy' => [
                 'products/activia-strawberry.jpg',
                 'products/activia-greek.jpg',
                 'products/oikos-vanilla.jpg',
                 'products/actimel-berries.jpg',
-                'products/Danone-kefir.jpg',
+                'products/nordic-kefir.jpg',
             ],
             'plant' => [
                 'products/alpro-oat-milk.jpg',
@@ -83,7 +83,7 @@ class ProductImageSeeder extends Seeder
             ],
             'protein' => [
                 'products/actimel-berries.jpg',
-                'products/Danone-glacier.jpg',
+                'products/nordic-glacier.jpg',
                 'products/oikos-vanilla.jpg',
                 'products/activia-strawberry.jpg',
             ],

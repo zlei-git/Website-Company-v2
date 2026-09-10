@@ -1,6 +1,6 @@
 @extends('layouts.customer')
 
-@section('title', 'Shopping Bag - Danone Store Indonesia')
+@section('title', 'Shopping Bag - NordicHome Atelier')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -107,7 +107,7 @@
                     @else
                         <form action="{{ route('cart.applyCoupon') }}" method="POST" class="flex gap-2">
                             @csrf
-                            <input type="text" name="code" placeholder="Code (e.g. DANONE10)" class="text-xs uppercase" required>
+                            <input type="text" name="code" placeholder="Code (e.g. NORDIC10)" class="text-xs uppercase" required>
                             <button type="submit" class="btn-secondary py-2 px-3 text-[11px] flex-shrink-0">Apply</button>
                         </form>
                     @endif

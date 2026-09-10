@@ -1,12 +1,12 @@
 @extends('layouts.customer')
 
-@section('title', 'Inspiration Journal - Danone Store Indonesia')
+@section('title', 'Inspiration Journal - Nordic Pure Nutrition')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
         <span class="text-xs uppercase tracking-[0.2em] text-[#0072CE] font-semibold">Editorial and Wellness</span>
-        <h1 class="font-serif text-4xl sm:text-5xl text-[#002D72]">Jurnal Nutrisi & Kesehatan Danone</h1>
+        <h1 class="font-serif text-4xl sm:text-5xl text-[#002D72]">Nordic Nutrition Journal</h1>
         <p class="text-sm text-[#64748B] font-light leading-relaxed">
             Essays on deep cellular hydration, gut microbiome health, organic plant-based living, and sustainable vitality.
         </p>

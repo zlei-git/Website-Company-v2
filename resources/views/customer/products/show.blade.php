@@ -1,6 +1,6 @@
 @extends('layouts.customer')
 
-@section('title', $product->name . ' - Danone Store Indonesia')
+@section('title', $product->name . ' - Nordic Pure Nutrition')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" x-data="{ 
@@ -124,7 +124,7 @@
 
         <div x-show="activeTab === 'desc'" class="prose max-w-none text-sm text-[#555555] leading-relaxed space-y-4">
             <p>{{ $product->description }}</p>
-            <p>Every production batch is laboratory certified for mineral balance, biochemical purity, and live culture count before receiving the standar kualitas resmi Danone.</p>
+            <p>Every production batch is laboratory certified for mineral balance, biochemical purity, and live culture count before receiving the Nordic seal of living integrity.</p>
         </div>
 
         <div x-show="activeTab === 'specs'" x-cloak class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">

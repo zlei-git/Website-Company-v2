@@ -1,6 +1,6 @@
 @extends('layouts.customer')
 
-@section('title', 'Saved Wishlist - Danone Store Indonesia')
+@section('title', 'Saved Wishlist - Nordic Pure Nutrition')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

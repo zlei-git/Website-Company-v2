@@ -2,22 +2,22 @@
     {{-- Left: Workspace Status & Atelier Indicator --}}
     <div class="flex items-center space-x-4">
         <div class="flex items-center space-x-2 text-xs text-[#71717A]">
-            <span class="inline-block w-2 h-2 rounded-full bg-[#00965E] animate-pulse"></span>
-            <span class="tracking-wide uppercase text-[10px] font-bold text-[#002D72]">Danone Store Indonesia</span>
-            <span class="text-[#0072CE]">&bull;</span>
-            <span class="text-[11px] font-mono text-[#71717A]">{{ now()->format('D, d M Y - H:i') }} WIB</span>
+            <span class="inline-block w-2 h-2 rounded-full bg-[#7A8B6F] animate-pulse"></span>
+            <span class="tracking-wide uppercase text-[10px] font-medium text-[#18181A]">Nordic Atelier</span>
+            <span class="text-[#D8C3A5]">&bull;</span>
+            <span class="text-[11px] font-mono text-[#71717A]">{{ now()->format('D, d M Y - H:i') }} CET</span>
         </div>
     </div>
 
     {{-- Right: Actions & Administrator Profile --}}
     <div class="flex items-center space-x-6">
-        <a href="{{ route('home') }}" target="_blank" class="hidden sm:inline-flex items-center space-x-1 text-xs text-[#0072CE] font-bold hover:underline transition-colors">
-            <span>Buka Toko</span>
-            <span class="text-[10px]">↗</span>
+        <a href="{{ route('home') }}" target="_blank" class="hidden sm:inline-flex items-center space-x-1 text-xs text-[#71717A] hover:text-[#18181A] transition-colors">
+            <span>Storefront</span>
+            <span class="text-[10px] text-[#D8C3A5]">↗</span>
         </a>
 
-        <a href="{{ route('admin.products.create') }}" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 bg-[#0072CE] hover:bg-[#002D72] text-white text-xs uppercase tracking-wider font-bold rounded-lg transition-colors">
-            <span>+ Tambah Produk</span>
+        <a href="{{ route('admin.products.create') }}" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 bg-[#18181A] hover:bg-[#27272A] text-[#FAF8F3] text-xs uppercase tracking-wider font-medium rounded-sm transition-colors">
+            <span>+ Add Piece</span>
         </a>
 
         {{-- Profile Pill --}}

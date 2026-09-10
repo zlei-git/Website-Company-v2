@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'New Category - Danone Admin')
+@section('title', 'New Category - Nordic Admin')
 
 @section('content')
 <div class="max-w-2xl space-y-6">

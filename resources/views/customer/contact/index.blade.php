@@ -1,6 +1,6 @@
 @extends('layouts.customer')
 
-@section('title', 'Contact Concierge - Danone Store Indonesia')
+@section('title', 'Contact Concierge - Nordic Pure Nutrition')
 
 @section('content')
 <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,7 +72,7 @@
                 <div class="border-t border-[#E5E0D8] pt-4">
                     <h3 class="font-serif text-lg text-[#1C1C1C] mb-2 font-medium">Direct Inquiries</h3>
                     <p class="text-sm text-[#777777] leading-relaxed">
-                        Email: <a href="mailto:concierge@danone.co.id" class="text-[#1C1C1C] underline">concierge@danone.co.id</a><br>
+                        Email: <a href="mailto:concierge@nordichome.test" class="text-[#1C1C1C] underline">concierge@nordichome.test</a><br>
                         Phone: +45 33 12 34 56
                     </p>
                 </div>

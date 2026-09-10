@@ -1,12 +1,12 @@
 @extends('layouts.admin')
 
-@section('title', 'Atelier Settings - Danone Store Indonesia')
+@section('title', 'Atelier Settings - NordicHome Studio')
 
 @section('content')
 <div class="max-w-3xl space-y-6">
     <div>
         <div class="text-[10px] uppercase tracking-[0.25em] text-[#D8C3A5] font-bold mb-1">
-            Danone Store &bull; København Flagship
+            NordicHome &bull; København Flagship
         </div>
         <h1 class="text-3xl text-[#18181A] font-medium font-heading">Studio & Brand Settings</h1>
         <p class="text-xs text-[#71717A] mt-1">Configure atelier concierge details, flagship studio coordinates, and customer communications.</p>
@@ -19,11 +19,11 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
                 <label class="block text-xs font-semibold uppercase tracking-wider text-[#27272A] mb-1">Brand / Studio Name</label>
-                <input type="text" name="company_name" value="{{ $settings['company_name'] ?? 'Danone Store Indonesia' }}" required class="w-full rounded-md border border-[#E8E4DC] px-3 py-2 text-sm focus:border-[#18181A] focus:outline-none">
+                <input type="text" name="company_name" value="{{ $settings['company_name'] ?? 'Nordic Pure Nutrition' }}" required class="w-full rounded-md border border-[#E8E4DC] px-3 py-2 text-sm focus:border-[#18181A] focus:outline-none">
             </div>
             <div>
                 <label class="block text-xs font-semibold uppercase tracking-wider text-[#27272A] mb-1">Concierge Email</label>
-                <input type="email" name="company_email" value="{{ $settings['company_email'] ?? 'concierge@danone.co.id' }}" required class="w-full rounded-md border border-[#E8E4DC] px-3 py-2 text-sm focus:border-[#18181A] focus:outline-none">
+                <input type="email" name="company_email" value="{{ $settings['company_email'] ?? 'concierge@nordichome.test' }}" required class="w-full rounded-md border border-[#E8E4DC] px-3 py-2 text-sm focus:border-[#18181A] focus:outline-none">
             </div>
         </div>
 
@@ -48,11 +48,11 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                     <label class="block text-[11px] text-[#71717A] mb-1 font-medium">Instagram Atelier</label>
-                    <input type="url" name="social_instagram" value="{{ $settings['social_instagram'] ?? 'https://instagram.com/danonehome' }}" placeholder="https://instagram.com/danonehome" class="w-full rounded-md border border-[#E8E4DC] px-3 py-2 text-sm focus:border-[#18181A] focus:outline-none">
+                    <input type="url" name="social_instagram" value="{{ $settings['social_instagram'] ?? 'https://instagram.com/nordichome' }}" placeholder="https://instagram.com/nordichome" class="w-full rounded-md border border-[#E8E4DC] px-3 py-2 text-sm focus:border-[#18181A] focus:outline-none">
                 </div>
                 <div>
                     <label class="block text-[11px] text-[#71717A] mb-1 font-medium">Pinterest Lookbook</label>
-                    <input type="url" name="social_pinterest" value="{{ $settings['social_pinterest'] ?? 'https://pinterest.com/danonehome' }}" placeholder="https://pinterest.com/danonehome" class="w-full rounded-md border border-[#E8E4DC] px-3 py-2 text-sm focus:border-[#18181A] focus:outline-none">
+                    <input type="url" name="social_pinterest" value="{{ $settings['social_pinterest'] ?? 'https://pinterest.com/nordichome' }}" placeholder="https://pinterest.com/nordichome" class="w-full rounded-md border border-[#E8E4DC] px-3 py-2 text-sm focus:border-[#18181A] focus:outline-none">
                 </div>
             </div>
         </div>
