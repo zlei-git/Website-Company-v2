@@ -100,6 +100,8 @@ class ProductImageSeeder extends Seeder
             ],
         ];
 
+        ProductImage::truncate();
+
         foreach ($products as $product) {
             $slug = $product->slug;
             $catSlug = $product->category->slug ?? '';
@@ -107,36 +109,36 @@ class ProductImageSeeder extends Seeder
             // Determine primary image
             $primaryImage = $productImageMap[$slug] ?? null;
             if (!$primaryImage) {
-                // Fallback: pick from category pool
                 $pool = $this->getCategoryPool($catSlug, $categoryFallback);
                 $primaryImage = $pool[$product->id % count($pool)];
             }
 
-            // Get the fallback pool for secondary images
-            $pool = $this->getCategoryPool($catSlug, $categoryFallback);
+            $info = pathinfo($primaryImage);
+            $basePath = $info['dirname'] . '/' . $info['filename'];
 
-            // Create primary image
+            // 1. Primary Studio Packshot
             ProductImage::create([
                 'product_id' => $product->id,
-                'image_path' => $primaryImage,
+                'image_path' => $basePath . '.jpg',
                 'is_primary' => true,
                 'sort_order' => 0,
             ]);
 
-            // Create 2 secondary images from the pool
-            for ($i = 1; $i <= 2; $i++) {
-                $secondaryImage = $pool[($product->id + $i) % count($pool)];
-                // Avoid duplicate of primary
-                if ($secondaryImage === $primaryImage) {
-                    $secondaryImage = $pool[($product->id + $i + 1) % count($pool)];
-                }
-                ProductImage::create([
-                    'product_id' => $product->id,
-                    'image_path' => $secondaryImage,
-                    'is_primary' => false,
-                    'sort_order' => $i,
-                ]);
-            }
+            // 2. Macro Detail Angle
+            ProductImage::create([
+                'product_id' => $product->id,
+                'image_path' => $basePath . '-detail.jpg',
+                'is_primary' => false,
+                'sort_order' => 1,
+            ]);
+
+            // 3. Lifestyle / Context Angle
+            ProductImage::create([
+                'product_id' => $product->id,
+                'image_path' => $basePath . '-lifestyle.jpg',
+                'is_primary' => false,
+                'sort_order' => 2,
+            ]);
         }
     }
 
