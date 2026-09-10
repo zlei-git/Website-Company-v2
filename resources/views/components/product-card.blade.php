@@ -6,7 +6,7 @@
 
 @php
     $primaryImg = $product->primaryImage ?? ($product->images ? ($product->images->where('is_primary', true)->first() ?? $product->images->first()) : null);
-    $imageUrl = $primaryImg?->image_url ?? 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=800&q=80';
+    $imageUrl = $primaryImg?->image_url ?? asset('images/products/aqua-reflections.jpg');
 
     $isWishlisted = false;
     if (auth()->check()) {
@@ -28,7 +28,7 @@
                  alt="{{ $product->name }}" 
                  loading="lazy"
                  class="w-full h-full object-cover object-center transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
-                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=800&q=80';" />
+                 onerror="this.onerror=null; this.src='{{ asset('images/hero-banner.jpg') }}';" />
         </a>
 
         {{-- Top Badges Overlay --}}

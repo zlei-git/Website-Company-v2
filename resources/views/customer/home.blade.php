@@ -158,7 +158,7 @@
                 @php $heroPiece = $featuredProducts->first(); @endphp
                 <div class="group bg-white border border-[#E8E4DC] rounded-sm overflow-hidden flex flex-col justify-between">
                     <div class="relative aspect-[4/3] bg-[#EFECE6] overflow-hidden">
-                        <img src="{{ $heroPiece->images->where('is_primary', true)->first()?->image_url ?? 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?w=1000&q=80' }}" 
+                        <img src="{{ $heroPiece->images->where('is_primary', true)->first()?->image_url ?? asset('images/products/aqua-reflections.jpg') }}" 
                              alt="{{ $heroPiece->name }}" 
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 text-[10px] uppercase tracking-widest font-semibold text-[#18181A]">
@@ -195,7 +195,7 @@
                     <a href="{{ route('products.show', $comp->slug) }}" 
                        class="group bg-white border border-[#E8E4DC] hover:border-[#18181A] p-4 rounded-sm flex items-center gap-5 transition-all">
                         <div class="w-24 h-24 bg-[#EFECE6] flex-shrink-0 overflow-hidden rounded-sm">
-                            <img src="{{ $comp->images->where('is_primary', true)->first()?->image_url ?? 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80' }}" 
+                            <img src="{{ $comp->images->where('is_primary', true)->first()?->image_url ?? asset('images/products/alpro-oat-milk.jpg') }}" 
                                  alt="{{ $comp->name }}" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>

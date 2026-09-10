@@ -181,3 +181,19 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'admin'])->group(fun
     Route::get('settings', [AdminSettingController::class, 'index'])->name('settings.index');
     Route::put('settings', [AdminSettingController::class, 'update'])->name('settings.update');
 });
+
+// Fallback to serve storage assets safely if symlink or static serving fails
+Route::get('/storage/{path}', function ($path) {
+    $candidates = [
+        public_path('images/' . $path),
+        public_path('images/products/' . basename($path)),
+        storage_path('app/public/' . $path),
+    ];
+    foreach ($candidates as $cand) {
+        if (file_exists($cand) && !is_dir($cand)) {
+            return response()->file($cand);
+        }
+    }
+    abort(404);
+})->where('path', '.*');
+

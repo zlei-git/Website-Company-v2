@@ -37,10 +37,16 @@ class ProductImage extends Model
     {
         $path = $this->image_path;
         if (empty($path)) {
-            return 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80';
+            return asset('images/hero-banner.jpg');
         }
         if (str_starts_with($path, 'http')) {
             return $path;
+        }
+        if (file_exists(public_path('images/' . $path))) {
+            return asset('images/' . $path);
+        }
+        if (file_exists(public_path('images/products/' . basename($path)))) {
+            return asset('images/products/' . basename($path));
         }
         return asset('storage/' . $path);
     }

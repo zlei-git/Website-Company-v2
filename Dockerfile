@@ -39,8 +39,8 @@ RUN npm install && npm run build
 # Prepare database, storage, and cache directory permissions
 RUN mkdir -p database && \
     touch database/database.sqlite && \
-    chmod -R 777 database storage bootstrap/cache
+    chmod -R 777 database storage bootstrap/cache public
 
 EXPOSE 8000
 
-CMD sh -c "mkdir -p database && touch database/database.sqlite && chmod -R 777 database storage bootstrap/cache && php artisan migrate --force && (php artisan db:seed --force || true) && php artisan storage:link || true && php artisan serve --host=0.0.0.0 --port=${PORT:-8000}"
+CMD sh -c "mkdir -p database && touch database/database.sqlite && chmod -R 777 database storage bootstrap/cache public && php artisan migrate --force && (php artisan db:seed --force || true) && (rm -rf public/storage || true) && php artisan storage:link --force || true && php artisan serve --host=0.0.0.0 --port=${PORT:-8000}"
