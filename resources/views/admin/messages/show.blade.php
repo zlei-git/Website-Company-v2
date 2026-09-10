@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Message: ' . $message->subject . ' - Nordic Admin')
+@section('title', 'Message: ' . $message->subject . ' - Danone Admin')
 
 @section('content')
 <div class="max-w-3xl space-y-6">

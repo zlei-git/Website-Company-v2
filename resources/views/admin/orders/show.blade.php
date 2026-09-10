@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Consignment Dossier #' . $order->order_number . ' - NordicHome Atelier')
+@section('title', 'Consignment Dossier #' . $order->order_number . ' - Danone Store Indonesia')
 
 @section('content')
 <div class="space-y-8 max-w-5xl mx-auto">

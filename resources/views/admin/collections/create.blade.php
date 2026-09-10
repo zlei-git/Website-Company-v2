@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'New Collection - Nordic Admin')
+@section('title', 'New Collection - Danone Admin')
 
 @section('content')
 <div class="max-w-2xl space-y-6">
@@ -10,7 +10,7 @@
         @csrf
         <div>
             <label class="block text-xs font-semibold uppercase tracking-wider text-[#333333] mb-1">Name *</label>
-            <input type="text" name="name" required placeholder="e.g. Nordic Living">
+            <input type="text" name="name" required placeholder="e.g. Danone Living">
         </div>
         <div>
             <label class="block text-xs font-semibold uppercase tracking-wider text-[#333333] mb-1">Description</label>

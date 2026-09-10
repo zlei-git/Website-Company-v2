@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'NordicHome Atelier - Studio Desk')</title>
+    <title>@yield('title', 'Danone Store Admin - Panel Manajemen')</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

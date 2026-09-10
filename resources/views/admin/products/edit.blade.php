@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Edit ' . $product->name . ' - Nordic Admin')
+@section('title', 'Edit ' . $product->name . ' - Danone Admin')
 
 @section('content')
 <div class="max-w-4xl space-y-6">

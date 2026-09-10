@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Workshop Reserve & Inventory - NordicHome Atelier')
+@section('title', 'Workshop Reserve & Inventory - Danone Store Indonesia')
 
 @section('content')
 <div class="space-y-8 max-w-7xl mx-auto">

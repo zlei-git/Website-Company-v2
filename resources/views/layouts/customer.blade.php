@@ -6,8 +6,8 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Nordic - Pure Hydration & Living Nutrition')</title>
-    <meta name="description" content="@yield('meta_description', 'Single-origin volcanic spring waters, live probiotic yogurts, and organic plant-based milks for conscious living.')">
+    <title>@yield('title', 'Danone Store - Toko Resmi Nutrisi & Hidrasi Sehat Indonesia')</title>
+    <meta name="description" content="@yield('meta_description', 'Toko resmi online produk Danone Indonesia: AQUA, Evian, Activia, Bebelac, SGM, dan Alpro. 100% produk asli dan pengiriman aman.')">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

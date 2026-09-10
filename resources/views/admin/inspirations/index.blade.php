@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Journal Publications & Editorial - Nordic Operations')
+@section('title', 'Journal Publications & Editorial - Danone Operations')
 
 @section('content')
 <div class="space-y-8 max-w-7xl mx-auto">

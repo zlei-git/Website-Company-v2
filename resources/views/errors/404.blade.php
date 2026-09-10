@@ -1,6 +1,6 @@
 @extends('layouts.customer')
 
-@section('title', 'Page Not Found - Nordic Pure Nutrition')
+@section('title', 'Page Not Found - Danone Store Indonesia')
 
 @section('content')
 <div class="min-h-[60vh] flex items-center justify-center py-20 px-6">

@@ -1,10 +1,15 @@
 <aside class="studio-sidebar flex-shrink-0 flex flex-col justify-between hidden md:flex border-r border-[#27272A]">
     <div>
-        {{-- Studio Header --}}
+        {{-- Danone Admin Header --}}
         <div class="h-20 flex items-center px-6 border-b border-[#27272A]">
-            <a href="{{ route('admin.dashboard') }}" class="flex flex-col">
-                <span class="font-serif text-xl font-medium text-white tracking-tight">NordicHome</span>
-                <span class="text-[9px] uppercase tracking-[0.3em] text-[#D8C3A5] -mt-0.5">Atelier Studio Desk</span>
+            <a href="{{ route('admin.dashboard') }}" class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-[#0072CE] flex items-center justify-center text-white font-extrabold text-sm shadow-sm">
+                    D
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg text-white tracking-tight leading-none">DANONE</span>
+                    <span class="text-[9px] uppercase tracking-[0.2em] text-[#00A3E0] font-semibold mt-0.5">Admin Panel</span>
+                </div>
             </a>
         </div>
 
@@ -12,22 +17,22 @@
         <nav class="p-4 space-y-6 text-xs">
             {{-- Section 1: Overview --}}
             <div>
-                <span class="px-3 text-[9px] uppercase tracking-[0.25em] text-[#71717A] font-semibold block mb-2">Overview</span>
+                <span class="px-3 text-[9px] uppercase tracking-[0.25em] text-[#71717A] font-semibold block mb-2">Ringkasan</span>
                 <div class="space-y-1">
                     <a href="{{ route('admin.dashboard') }}" class="studio-nav-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
-                        <svg class="w-4 h-4 text-[#D8C3A5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
-                        <span>Executive Atelier</span>
+                        <svg class="w-4 h-4 text-[#00A3E0]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+                        <span>Dashboard Utama</span>
                     </a>
                 </div>
             </div>
 
             {{-- Section 2: Catalog --}}
             <div>
-                <span class="px-3 text-[9px] uppercase tracking-[0.25em] text-[#71717A] font-semibold block mb-2">Pieces & Spaces</span>
+                <span class="px-3 text-[9px] uppercase tracking-[0.25em] text-[#71717A] font-semibold block mb-2">Katalog & Produk</span>
                 <div class="space-y-1">
                     <a href="{{ route('admin.products.index') }}" class="studio-nav-item {{ request()->routeIs('admin.products.*') ? 'active' : '' }}">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
-                        <span>Nutrition Products</span>
+                        <span>Produk Danone</span>
                     </a>
                     <a href="{{ route('admin.categories.index') }}" class="studio-nav-item {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>

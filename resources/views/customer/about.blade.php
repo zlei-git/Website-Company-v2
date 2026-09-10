@@ -1,6 +1,6 @@
 @extends('layouts.customer')
 
-@section('title', 'About Us - Nordic Pure Nutrition & Natural Hydration')
+@section('title', 'About Us - Danone Store Indonesia')
 
 @section('content')
 {{-- Editorial Header --}}
@@ -23,7 +23,7 @@
             <img src="{{ asset('images/cat-waters.jpg') }}" alt="Pristine Volcanic Spring Waters" class="w-full h-full object-cover">
         </div>
         <div class="aspect-[3/4] rounded-sm overflow-hidden bg-[#EFECE6] border border-[#E8E4DC] shadow-md md:-mt-8">
-            <img src="{{ asset('images/breakfast-ritual.jpg') }}" alt="The Nordic Morning Nutrition Table" class="w-full h-full object-cover">
+            <img src="{{ asset('images/breakfast-ritual.jpg') }}" alt="Produk Nutrisi & Hidrasi Danone" class="w-full h-full object-cover">
         </div>
         <div class="aspect-[3/4] rounded-sm overflow-hidden bg-[#EFECE6] border border-[#E8E4DC] shadow-sm">
             <img src="{{ asset('images/cat-yogurt.jpg') }}" alt="Live Probiotic Cultured Dairy" class="w-full h-full object-cover">
@@ -63,7 +63,7 @@
         <span class="text-xs uppercase tracking-[0.2em] text-[#7A8B6F] font-semibold">Circular Stewardship</span>
         <h2 class="font-serif text-3xl sm:text-4xl text-[#18181A]">Sustainable by Origin, Vital by Nature</h2>
         <p class="text-[#71717A] leading-relaxed font-light">
-            We partner exclusively with certified organic Nordic oat growers and regenerative dairy cooperatives. Every bottle utilizes 100% recycled food-grade materials or infinitely recyclable glass, transported via certified cold-chain logistics to safeguard cellular potency and ecological balance.
+            We partner exclusively with certified organic Danone oat growers and regenerative dairy cooperatives. Every bottle utilizes 100% recycled food-grade materials or infinitely recyclable glass, transported via certified cold-chain logistics to safeguard cellular potency and ecological balance.
         </p>
         <div class="pt-6">
             <a href="{{ route('products.index') }}" class="btn-primary">Browse Nutrition & Hydration Catalog</a>

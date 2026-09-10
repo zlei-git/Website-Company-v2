@@ -10,25 +10,42 @@ class UserSeeder extends Seeder
 {
     public function run(): void
     {
-        User::create([
-            'name' => 'Admin NordicHome',
-            'email' => 'admin@nordichome.test',
-            'password' => Hash::make('password'),
-            'role' => 'admin',
-        ]);
+        // Danone Official Accounts
+        User::firstOrCreate(
+            ['email' => 'admin@danone.co.id'],
+            [
+                'name' => 'Admin Danone Indonesia',
+                'password' => Hash::make('password'),
+                'role' => 'admin',
+            ]
+        );
 
-        User::create([
-            'name' => 'Emma Lindström',
-            'email' => 'customer@nordichome.test',
-            'password' => Hash::make('password'),
-            'role' => 'customer',
-        ]);
+        User::firstOrCreate(
+            ['email' => 'customer@danone.co.id'],
+            [
+                'name' => 'Budi Santoso',
+                'password' => Hash::make('password'),
+                'role' => 'customer',
+            ]
+        );
 
-        User::create([
-            'name' => 'Budi Santoso',
-            'email' => 'customer2@nordichome.test',
-            'password' => Hash::make('password'),
-            'role' => 'customer',
-        ]);
+        // Fallback / legacy demo accounts
+        User::firstOrCreate(
+            ['email' => 'admin@nordichome.test'],
+            [
+                'name' => 'Admin Danone',
+                'password' => Hash::make('password'),
+                'role' => 'admin',
+            ]
+        );
+
+        User::firstOrCreate(
+            ['email' => 'customer@nordichome.test'],
+            [
+                'name' => 'Pelanggan Danone',
+                'password' => Hash::make('password'),
+                'role' => 'customer',
+            ]
+        );
     }
 }

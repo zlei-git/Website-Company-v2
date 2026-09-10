@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Design Series & Collections - NordicHome Atelier')
+@section('title', 'Design Series & Collections - Danone Store Indonesia')
 
 @section('content')
 <div class="space-y-8 max-w-7xl mx-auto">

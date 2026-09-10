@@ -1,6 +1,6 @@
 @extends('layouts.customer')
 
-@section('title', 'Add New Address - Nordic Pure Nutrition')
+@section('title', 'Add New Address - Danone Store Indonesia')
 
 @section('content')
 <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

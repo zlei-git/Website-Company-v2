@@ -35,6 +35,6 @@ class RegisterController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('home')->with('success', 'Welcome to NordicHome! Your account has been created.');
+        return redirect()->route('home')->with('success', 'Selamat datang di Danone Store! Akun Anda telah berhasil dibuat.');
     }
 }
